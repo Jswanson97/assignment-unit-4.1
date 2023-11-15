@@ -43,11 +43,20 @@ function addNumbers(firstNumber) {
 }
 
 console.log('The answer of addNumbers is', addNumbers(7));
+
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {
+  console.log('inside of multiplyThree');
+  //declare and assign 3 numbers
+  let number1 = 12;
+  let number2 = 10;
+  let number3 = 5;
+  let answer = number1 * number2 * number3;
+  return answer;
 
 }
 
+console.log('The answer is', multiplyThree());
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
