@@ -14,18 +14,35 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(name) {
-  return;
-}
-// Remember to call the function to test
 
+
+
+//Input = This function should have a name argument when it is called
+function helloName(name) {
+  console.log('inside of helloName', name);
+//The internal details of the function
+//'Hello, ' + name + '!';
+let result = 'Hello, ' + name + '!';
+//Output = Capture results in a variable, then return
+  return result;
+}
+
+// Remember to call the function to test
+console.log('Hello Name function', helloName('Jesse'));
 
 // 3. Function to add two numbers together & return the result
+//
 function addNumbers(firstNumber) {
+  console.log('inside of addNumbers')
   // return firstNumber + secondNumber;
+  //declare a secondNumber
+  let secondNumber = 10;
+  //add firstnumber + secondNumber
+  let answer = firstNumber + secondNumber;
+  return answer;
 }
 
-
+console.log('The answer of addNumbers is', addNumbers(7));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {
 
