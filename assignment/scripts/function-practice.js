@@ -70,21 +70,31 @@ function isPositive(number) {
 }
 
 console.log (`check if number is greater than 0 ${isPositive}`);
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-
+console.log (`check if 6 is greater than 0 ${isPositive(6)}`);
+console.log (`check if -2 is greater than 0 ${isPositive(-2)}`);
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+if (array.length == 0) {
+  return undefined;
+}
+return array[array.length - 1];
 }
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+for (const element of array) {
+  if (value === element) {
+    return true;
+  }
+}
+return false;
 }
 
 // ----------------------
