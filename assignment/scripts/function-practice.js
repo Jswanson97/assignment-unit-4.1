@@ -36,7 +36,7 @@ function addNumbers(firstNumber) {
   console.log('inside of addNumbers')
   // return firstNumber + secondNumber;
   //declare a secondNumber
-  let secondNumber = 10;
+  let secondNumber = 5;
   //add firstnumber + secondNumber
   let answer = firstNumber + secondNumber;
   return answer;
@@ -48,9 +48,9 @@ console.log('The answer of addNumbers is', addNumbers(7));
 function multiplyThree() {
   console.log('inside of multiplyThree');
   //declare and assign 3 numbers
-  let number1 = 12;
-  let number2 = 10;
-  let number3 = 5;
+  let number1 = 2;
+  let number2 = 6;
+  let number3 = 2;
   let answer = number1 * number2 * number3;
   return answer;
 
@@ -62,10 +62,14 @@ console.log('The answer is', multiplyThree());
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
   }
-  return;
+  else {
+  return false;
+  }
 }
+
+console.log (`check if number is greater than 0 ${isPositive}`);
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
